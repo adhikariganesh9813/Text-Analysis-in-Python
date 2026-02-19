@@ -1,10 +1,12 @@
+import string
+
 givenstring="Lorem ipsum dolor! diam amet, consetetur Lorem magna. sed diam nonumy eirmod tempor. diam et labore? et diam magna. et diam amet."
 
 class TextAnalyzer:
 
     def __init__(self, text):
         text = text.lower()
-        text = text.replace('.','').replace('!','').replace('?','').replace(',','')
+        text = text.translate(str.maketrans("", "", string.punctuation))
         
         self.fmtText = text
 
