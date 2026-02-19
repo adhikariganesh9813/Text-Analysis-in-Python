@@ -11,7 +11,9 @@ The script defines a `TextAnalyzer` class and runs it on a predefined sample str
 ### 1) Text preprocessing
 Inside `__init__`, the input text is normalized by:
 - Converting all text to lowercase.
-- Removing punctuation marks: `.`, `!`, `?`, `,`.
+- Removing punctuation using:
+  - `text = text.translate(str.maketrans("", "", string.punctuation))`
+  - This uses a translation table and removes all standard punctuation characters.
 
 The cleaned result is stored in:
 - `self.fmtText`
