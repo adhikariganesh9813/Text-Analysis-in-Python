@@ -1,4 +1,4 @@
-# Text Analysis in Python
+# Object-Oriented Text Analysis in Python
 
 A Python project that performs text analysis using object-oriented programming. The project defines a `TextAnalyzer` class capable of processing any input string and computing word frequency statistics.
 
